@@ -1,0 +1,19 @@
+var client_id = 'd2d766bfbae547579994a32cca65ab27';
+var client_secret = 'f41186d588614c1691a86b1c62c7e7c5';
+
+var authOptions = {
+  url: 'discography.him',
+  headers: {
+    'Authorization': 'Basic ' + (new Buffer.from(client_id + ':' + client_secret).toString('base64'))
+  },
+  form: {
+    grant_type: 'client_credentials'
+  },
+  json: true
+};
+
+request.post(authOptions, function(error, response, body) {
+  if (!error && response.statusCode === 200) {
+    var token = body.access_token;
+  }
+});
