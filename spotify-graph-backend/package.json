@@ -1,0 +1,22 @@
+{
+  "name": "spotify-graph-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "spotify-web-api-node": "^5.0.2",
+    "uuid": "^11.1.0",
+    "vis-network": "^10.0.1"
+  },
+  "description": "This is a smol project that is supposed to help me learn how to test and debug from data\r The project being built is a knowledeg graph using Spotify API key to grab artists and their information",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
